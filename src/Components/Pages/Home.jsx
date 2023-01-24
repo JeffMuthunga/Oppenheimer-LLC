@@ -1,20 +1,22 @@
 import React from "react";
 
+
+
 function Home () {
 
     return (
         <div>
         <div className="container">
             <div className="hero-div">
-                <h1>For the most exiting Properties in NAIROBI</h1>
+            <h1>For the most exicting jobs in NAIROBI</h1>
                 <div className="intro-btn">
-                    <button>Get Started</button>
+                    <button className="button-53">Get Started</button>
                 </div>
             </div>
             
             
         </div>
-        <div>
+        <div className="bottom-container">
             <h4>wow haha</h4>
         </div>
         </div>
