@@ -18,19 +18,20 @@ body {
 * {
   padding: 0px;
   margin: 0px;
+  font-family: 'Playfair Display', serif;
 }
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: pink;
+  background-color: grey;
 }
 header li {
   list-style: none;
 }
 header NavLink {
   color: white;
-  text-decoration: wavy;
+  text-decoration: none;
 }
 nav-container {
   margin: auto;
@@ -52,4 +53,11 @@ nav-container {
 
 .nav-branding {
   font-size: 2rem;
+}
+.hero-div {
+  width: 1000px;
+  
+}
+.hero-div h1 {
+  font-size: 5rem;
 }

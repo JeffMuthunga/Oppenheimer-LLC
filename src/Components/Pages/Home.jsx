@@ -5,7 +5,13 @@ function Home () {
     return (
         <div>
         <div className="container">
-            <h1>Oppenheimer LLC</h1> 
+            <div className="hero-div">
+                <h1>For the most exiting Properties in NAIROBI</h1>
+                <div className="intro-btn">
+                    <button>Get Started</button>
+                </div>
+            </div>
+            
             
         </div>
         <div>
