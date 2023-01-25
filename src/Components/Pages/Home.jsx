@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons"
+import Card from "../Common/Card";
 
 
 
@@ -26,7 +27,7 @@ function Home () {
                 <button type="submit" >Search</button>
             </form>
             </div>
-            <h4>wow haha</h4>
+            <Card/>
         </div>
         </div>
     )
