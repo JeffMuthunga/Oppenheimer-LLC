@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons"
 
 
 
@@ -17,10 +19,13 @@ function Home () {
             
         </div>
         <div className="bottom-container">
+            <div className="search-bar-container">
             <form>
+            <FontAwesomeIcon className="fa-map" icon={faMapMarkerAlt} beat />
                 <input type="text" placeholder=" What are you Looking for?" />
                 <button type="submit" >Search</button>
             </form>
+            </div>
             <h4>wow haha</h4>
         </div>
         </div>
