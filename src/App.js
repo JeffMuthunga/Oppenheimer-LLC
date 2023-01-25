@@ -9,6 +9,7 @@ import Home from './Components/Pages/Home';
 function App() {
   const [data, setData] = useState([])
   const [sdata, setSeData] = useState([])
+  const [cardData, setCardData] = useState([])
   
   useEffect(()=>{
     fetch(`http://localhost:8001/hotels/`)
@@ -40,6 +41,10 @@ function App() {
 }
 function handleClick(id){
   console.log(id)
+  fetch(`http://localhost:8001/hotels/{id}`)
+        .then(r=>r.json())
+        .then(data => setCardData(data))
+
 }
    
   return (
