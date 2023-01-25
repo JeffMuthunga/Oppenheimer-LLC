@@ -1,18 +1,22 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons"
+import {useTypewriter, Cursor} from 'react-simple-typewriter'
 import PropertyCollection from "../Common/PropertyCollection"
 import Card from "../Common/Card";
+import SearchBar from "../Common/SearchBar";
 
 
 
-function Home ({property}) {
+function Home ({searchData, handleInput}) {
+    const [text] = useTypewriter({
+        words: ['Nairobi', 'Nakuru', 'Mombasa'],
+        loop: {},
+    })
 
     return (
         <div>
         <div className="container">
             <div className="hero-div">
-            <h1>For the most exicting properties in <strong>NAIROBI</strong></h1>
+            <h1>For the most exciting properties in<span style={{fontWeight: 'bold', color:'purple'}}> {text}</span> <Cursor/></h1>
                 <div className="intro-btn">
                     <button className="button-53">Get Started</button>
                 </div>
@@ -21,14 +25,8 @@ function Home ({property}) {
             
         </div>
         <div className="bottom-container">
-            <div className="search-bar-container">
-            <form>
-            <FontAwesomeIcon className="fa-map" icon={faMapMarkerAlt} beat />
-                <input type="text" placeholder=" What are you Looking for?" />
-                <button type="submit" >Search</button>
-            </form>
-            </div>
-            <PropertyCollection property={property}/>
+            <SearchBar searchData={searchData} handleInput={handleInput}/>
+            <PropertyCollection />
         </div>
         </div>
     )

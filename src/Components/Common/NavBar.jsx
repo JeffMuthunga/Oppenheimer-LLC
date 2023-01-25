@@ -12,9 +12,9 @@ function NavBar (){
                 <img src="./Images/axis.png" alt="" width={10} height={40}/>
                 Oppenheimer LLC</NavLink>
             <ul className="nav-menu">
-                <li className="nav-link"><NavLink  to="/"> Home</NavLink ></li>
-                <li className="nav-link"><NavLink  to="/">Display Properties</NavLink ></li>
-                <li className="nav-link"><NavLink  to="/">Favorites</NavLink ></li>
+                <li className="nav-link"><NavLink  to="/home"> Home</NavLink ></li>
+                <li className="nav-link"><NavLink  to="/properties">Display Properties</NavLink ></li>
+                <li className="nav-link"><NavLink  to="/favorites">Favorites</NavLink ></li>
             </ul>
         </div>
         </nav>

@@ -1,19 +1,26 @@
 import React from "react";
 import Card from "./Card";
+import { useEffect, useState } from 'react';
 
-function PropertyCollection({property}){
-
+function PropertyCollection(){
+    const [propertyData, setPropertyData] = useState([])
+  
+    useEffect(()=>{
+      fetch(`http://localhost:8001/hotels/?_limit=7`)
+      .then(r=>r.json())
+      .then(data => setPropertyData(data))
+    }, []) 
     return (
         <div className="cards-container">
-            <div class="box-container">
-                <div class="box"></div>
-                <div class="box overlay">
+            <div className="box-container">
+                <div className="box"></div>
+                <div className="box overlay">
                     <h2>Featured</h2> <hr></hr>
                     <h5 align="right">Listings</h5>
-                    <button class="button-92" role="button">View All</button>
+                    <button className="button-92" role="button">View All</button>
                 </div>
             </div>
-            {property.map((property)=> <Card key={property.id} property={property}/>)}
+            {propertyData.map((property)=> <Card key={property.id} property={property}/>)}
         </div>
     )
 }
