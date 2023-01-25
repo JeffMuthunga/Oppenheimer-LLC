@@ -5,7 +5,15 @@ function PropertyCollection({property}){
 
     return (
         <div className="cards-container">
-            {property.map((property)=> <Card property={property}/>)}
+            <div class="box-container">
+                <div class="box"></div>
+                <div class="box overlay">
+                    <h2>Featured</h2> <hr></hr>
+                    <h5 align="right">Listings</h5>
+                    <button class="button-92" role="button">View All</button>
+                </div>
+            </div>
+            {property.map((property)=> <Card key={property.id} property={property}/>)}
         </div>
     )
 }

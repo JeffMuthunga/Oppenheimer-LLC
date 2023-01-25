@@ -7,7 +7,7 @@ function Card({property}) {
         <div className="cards">
             <img src={property.image} alt={property.title}/>
             <h3>{property.title}</h3>
-            <h5>{property.price}</h5>
+            <h2>Kshs  {property.price}</h2>
         </div>
     )
 }

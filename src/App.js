@@ -7,10 +7,10 @@ function App() {
   const [propertyData, setPropertyData] = useState([])
 
   useEffect(()=>{
-    fetch("http://localhost:8001/hotels/?_limit")
+    fetch(`http://localhost:8001/hotels/?_limit=7`)
     .then(r=>r.json())
     .then(data => setPropertyData(data))
-  })  
+  }, [])  
   return (
     <div>
       <NavBar/>

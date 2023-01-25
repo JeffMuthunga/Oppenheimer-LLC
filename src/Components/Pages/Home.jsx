@@ -12,7 +12,7 @@ function Home ({property}) {
         <div>
         <div className="container">
             <div className="hero-div">
-            <h1>For the most exicting jobs in <strong>NAIROBI</strong></h1>
+            <h1>For the most exicting properties in <strong>NAIROBI</strong></h1>
                 <div className="intro-btn">
                     <button className="button-53">Get Started</button>
                 </div>
