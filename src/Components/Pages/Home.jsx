@@ -1,11 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons"
+import PropertyCollection from "../Common/PropertyCollection"
 import Card from "../Common/Card";
 
 
 
-function Home () {
+function Home ({property}) {
 
     return (
         <div>
@@ -27,7 +28,7 @@ function Home () {
                 <button type="submit" >Search</button>
             </form>
             </div>
-            <Card/>
+            <PropertyCollection property={property}/>
         </div>
         </div>
     )

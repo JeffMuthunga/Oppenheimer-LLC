@@ -1,13 +1,13 @@
 import React from "react";
 import Card from "./Card";
 
-function PropertyDetails({property}){
+function PropertyCollection({property}){
 
     return (
         <div className="cards-container">
-            <Card property={property}/>
+            {property.map((property)=> <Card property={property}/>)}
         </div>
     )
 }
 
-export default PropertyDetails
+export default PropertyCollection
