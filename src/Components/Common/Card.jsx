@@ -8,6 +8,7 @@ function Card({property, handleClick}) {
             <img src={property.image} alt={property.title}/>
             <h3>{property.title}</h3>
             <h2>Kshs  {property.price}</h2>
+            <a href={`/properties/${property.id}`}>View Property</a>
         </div>
     )
 }

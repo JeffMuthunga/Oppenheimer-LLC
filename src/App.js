@@ -5,6 +5,8 @@ import NavBar from './Components/Common/NavBar';
 import DisplayProperties from './Components/Pages/DisplayImages';
 import Favorites from './Components/Pages/Favorites';
 import Home from './Components/Pages/Home';
+import CardDetails from './Components/Pages/CardDetails';
+import Card from './Components/Common/Card';
 
 function App() {
   const [data, setData] = useState([])
@@ -41,7 +43,7 @@ function App() {
 }
 function handleClick(id){
   console.log(id)
-  fetch(`http://localhost:8001/hotels/{id}`)
+  fetch(`http://localhost:8001/hotels/${id}`)
         .then(r=>r.json())
         .then(data => setCardData(data))
 
@@ -55,6 +57,7 @@ function handleClick(id){
       <Route  path="/home" element={<Home handleClick={handleClick} searchData={sdata} handleInput={handleInput} />} />
       <Route path="/properties" element={<DisplayProperties handleClick={handleClick} propertyData={data}/>} />
       <Route path="/favorites" element={<Favorites/>}/>
+      <Route path="/properties/:id" element={<CardDetails/>}/>
       </Routes>
     </div>
   )
