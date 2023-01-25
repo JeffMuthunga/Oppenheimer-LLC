@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { Route, Router} from 'react-router-dom';
-import ReactDOM from 'react-dom/client';
+import { Route, Routes, Navigate} from 'react-router-dom';
 import './App.css';
 import NavBar from './Components/Common/NavBar';
 import DisplayProperties from './Components/Pages/DisplayImages';
+import Favorites from './Components/Pages/Favorites';
 import Home from './Components/Pages/Home';
 
 function App() {
@@ -38,14 +38,19 @@ function App() {
     setSeData(displaySearch)
     
 }
+function handleClick(id){
+  console.log(id)
+}
    
   return (
     <div>
       <NavBar/>
-      <Router> 
-      <Route  path="/home" element={<Home searchData={sdata} handleInput={handleInput} />} />
-      <Route path="/properties" element={<DisplayProperties propertyData={data}/>} />
-      </Router>
+      <Routes> 
+      <Route path="/" element={<Navigate to="/home"/>}/>
+      <Route  path="/home" element={<Home handleClick={handleClick} searchData={sdata} handleInput={handleInput} />} />
+      <Route path="/properties" element={<DisplayProperties handleClick={handleClick} propertyData={data}/>} />
+      <Route path="/favorites" element={<Favorites/>}/>
+      </Routes>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 import { useEffect, useState } from 'react';
 
-function PropertyCollection(){
+function PropertyCollection({handleClick}){
     const [propertyData, setPropertyData] = useState([])
   
     useEffect(()=>{
@@ -20,7 +20,7 @@ function PropertyCollection(){
                     <button className="button-92" role="button">View All</button>
                 </div>
             </div>
-            {propertyData.map((property)=> <Card key={property.id} property={property}/>)}
+            {propertyData.map((property)=> <Card handleClick={handleClick} key={property.id} property={property}/>)}
         </div>
     )
 }

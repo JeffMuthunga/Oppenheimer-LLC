@@ -1,12 +1,12 @@
 import React from "react";
 import Card from "../Common/Card";
 
-function DisplayProperties({propertyData}) {
+function DisplayProperties({propertyData, handleClick}) {
 
     return (
     <div className="cards-container">
         
-        {propertyData.map((property)=> <Card key={property.id} property={property}/>)}
+        {propertyData.map((property)=> <Card handleClick={handleClick} key={property.id} property={property}/>)}
     </div>)
 
 }

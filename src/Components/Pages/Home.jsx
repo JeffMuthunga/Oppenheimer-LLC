@@ -6,7 +6,7 @@ import SearchBar from "../Common/SearchBar";
 
 
 
-function Home ({searchData, handleInput}) {
+function Home ({searchData, handleInput, handleClick}) {
     const [text] = useTypewriter({
         words: ['Nairobi', 'Nakuru', 'Mombasa'],
         loop: {},
@@ -26,7 +26,7 @@ function Home ({searchData, handleInput}) {
         </div>
         <div className="bottom-container">
             <SearchBar searchData={searchData} handleInput={handleInput}/>
-            <PropertyCollection />
+            <PropertyCollection handleClick={handleClick}/>
         </div>
         </div>
     )
