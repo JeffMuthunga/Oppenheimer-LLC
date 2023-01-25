@@ -8,7 +8,7 @@ function Home () {
         <div>
         <div className="container">
             <div className="hero-div">
-            <h1>For the most exicting jobs in NAIROBI</h1>
+            <h1>For the most exicting jobs in <strong>NAIROBI</strong></h1>
                 <div className="intro-btn">
                     <button className="button-53">Get Started</button>
                 </div>
@@ -17,6 +17,10 @@ function Home () {
             
         </div>
         <div className="bottom-container">
+            <form>
+                <input type="text" placeholder=" What are you Looking for?" />
+                <button type="submit" >Search</button>
+            </form>
             <h4>wow haha</h4>
         </div>
         </div>

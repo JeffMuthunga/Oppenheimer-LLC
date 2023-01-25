@@ -62,6 +62,9 @@ nav-container {
 .hero-div h1 {
   font-size: 4rem;
 }
+h1 strong {
+  color: purple;
+}
 .intro-btn {
   align-items: center;
   margin-left: 140px;
@@ -120,4 +123,32 @@ nav-container {
 
 .bottom-container {
   background-color: grey;
+  width: 100%;
+  height: 100vh;
+  background: rebeccapurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-container form {
+  background: grey;
+  width: 600px;
+  display: flex;
+  height: 55px;
+}
+form input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+form button {
+  background: black;
+  padding: 10px, 50 px;
+  border: none;
+  outline: none;
+  color:white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 100px;
 }
