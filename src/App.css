@@ -4,7 +4,7 @@ body {
 
 .container {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   background-position: center;
   background-size: cover;
   background-image: url("./Images/22\ large.jpg");
@@ -374,6 +374,53 @@ form .fa-map {
   margin: 4px 2px;
   cursor: pointer;
   width: 100%;
+}
+
+footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #333333;
+  height: 90px;
+  
+}
+
+footer p {
+  margin: 0;
+}
+
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer nav ul li {
+  margin-right: 20px;
+}
+
+footer nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .social-icons {
+  display: flex;
+}
+
+footer .social-icons a {
+  color: #fff;
+  margin-right: 10px;
 }
 
 

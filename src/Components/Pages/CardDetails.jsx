@@ -72,11 +72,12 @@ function CardDetails(){
                         <hr></hr>
                         <h3>Current Bid:<br></br> Kshs &nbsp;{card.price}</h3>
                         <hr></hr>
-                        <h4><FontAwesomeIcon style={{color: "purple"}} icon={faBed}/>&nbsp;&nbsp;{card.bedrooms} bed</h4>
-                        <h4><FontAwesomeIcon style={{color: "purple"}} icon={faHome}/>&nbsp;&nbsp;{card.sqrfeet} sq.ft</h4>
+                        <h4><FontAwesomeIcon style={{color: "purple"}} icon={faBed} beat/>&nbsp;&nbsp;{card.bedrooms} bed</h4>
+                        <h4><FontAwesomeIcon style={{color: "purple"}} icon={faHome} beat/>&nbsp;&nbsp;{card.sqrfeet} sq.ft</h4>
                         <hr></hr>
                         <h4>Description</h4>
-                        <p>{card.description}</p>
+                        <p style={{color: "white"}}>{card.description}</p>
+                        <br></br>
                     
                     </div>
                 </div>

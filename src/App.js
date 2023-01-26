@@ -7,6 +7,7 @@ import Admin from './Components/Pages/Admin';
 import Home from './Components/Pages/Home';
 import CardDetails from './Components/Pages/CardDetails';
 import Card from './Components/Common/Card';
+import Footer from './Components/Common/Footer';
 
 function App() {
   const [data, setData] = useState([])
@@ -73,6 +74,7 @@ function handleClick(id){
       <Route path="/add" element={<Admin/>}/>
       <Route path="/properties/:id" element={<CardDetails/>}/>
       </Routes>
+      <Footer/>
     </div>
   )
 }
