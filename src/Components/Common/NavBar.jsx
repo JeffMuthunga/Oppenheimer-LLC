@@ -14,7 +14,7 @@ function NavBar (){
             <ul className="nav-menu">
                 <li className="nav-link"><NavLink  to="/home"> Home</NavLink ></li>
                 <li className="nav-link"><NavLink  to="/properties">Display Properties</NavLink ></li>
-                <li className="nav-link"><NavLink  to="/favorites">Favorites</NavLink ></li>
+                <li className="nav-link"><NavLink  to="/add">Admin</NavLink ></li>
             </ul>
         </div>
         </nav>

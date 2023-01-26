@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons"
+import {faMapMarkerAlt, faBed, faHome} from "@fortawesome/free-solid-svg-icons"
+import Swal from "sweetalert2";
 
 function CardDetails(){
     const id = useParams().id
@@ -27,12 +28,38 @@ function CardDetails(){
         })
         .then(r=>r.json())
         .then((data) => setCard(data))
+
+        true ? Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: false,
+            timer: 1500
+          }) : Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+            footer: '<a href="">Why do I have this issue?</a>'
+          })
     }
     function handleClick(id){
         fetch(`http://localhost:8001/hotels/${id}`, {
             method: "DELETE"})
             .then(r=>r.json())
             .then((data)=> setCard(data))
+
+        true ? Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: false,
+            timer: 1500
+          }) : Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+            footer: '<a href="">Why do I have this issue?</a>'
+          })
     }
     return (
         <div className="row">
@@ -43,7 +70,10 @@ function CardDetails(){
                         <h3><FontAwesomeIcon className="fa-map" icon={faMapMarkerAlt} beat /><span>{card.city}</span></h3>
                         <h2 style={{textAlign: "center"}}>{card.title}</h2>
                         <hr></hr>
-                        <h3>Current Bid:<br></br> Kshs{card.price}</h3>
+                        <h3>Current Bid:<br></br> Kshs &nbsp;{card.price}</h3>
+                        <hr></hr>
+                        <h4><FontAwesomeIcon style={{color: "purple"}} icon={faBed}/>&nbsp;&nbsp;{card.bedrooms} bed</h4>
+                        <h4><FontAwesomeIcon style={{color: "purple"}} icon={faHome}/>&nbsp;&nbsp;{card.sqrfeet} sq.ft</h4>
                         <hr></hr>
                         <h4>Description</h4>
                         <p>{card.description}</p>

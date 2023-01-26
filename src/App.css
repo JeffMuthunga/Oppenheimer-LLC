@@ -314,7 +314,9 @@ form .fa-map {
   cursor: pointer;
   padding: .1em .3em;
 }
-
+.hide {
+  display: none;
+}
 
 
 

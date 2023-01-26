@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 
-function Favorites() {
+function Admin() {
 
     const [formData, setFormData] = useState({
     title: "",
@@ -41,7 +41,7 @@ function Favorites() {
         .then(((data)=> setFormData(data)))
 
         setFormData({
-            title: "",
+            formtitle: "",
             bedrooms: 0,
             sqrfeet: 0,
             city: "",
@@ -58,7 +58,7 @@ function Favorites() {
             <input type="text"  name="title" onChange={handleChange} placeholder="New Title" value={formData.title}/> 
 
             <label htmlFor="fname">Bedrooms</label>
-            <input type="number"  name="bedrooms" placeholder="No. of Bedrooms" value={formData.number} onChange={handleChange}/> 
+            <input type="number"  name="bedrooms" placeholder="No. of Bedrooms" value={formData.bedrooms} onChange={handleChange}/> 
 
             <label htmlFor="fname">Square Feet</label>
             <input type="number"  name="sqrfeet" placeholder="Square ft." value={formData.sqrfeet} onChange={handleChange}/> 
@@ -81,4 +81,4 @@ function Favorites() {
     )
 }
 
-export default Favorites
+export default Admin
