@@ -18,7 +18,7 @@ function Home ({searchData, handleInput, handleClick}) {
             <div className="hero-div">
             <h1>For the most exciting properties in<span style={{fontWeight: 'bold', color:'purple'}}> {text}</span> <Cursor/></h1>
                 <div className="intro-btn">
-                    <button className="button-53">Get Started</button>
+                    <a href="./"><button className="button-53">Get Started</button></a>
                 </div>
             </div>
             

@@ -17,7 +17,7 @@ function PropertyCollection({handleClick}){
                 <div className="box overlay">
                     <h2>Featured</h2> <hr></hr>
                     <h5 align="right">Listings</h5>
-                    <button className="button-92" role="button">View All</button>
+                    <a href="/properties"><button className="button-92" role="button">View All</button></a>
                 </div>
             </div>
             {propertyData.map((property)=> <Card handleClick={handleClick} key={property.id} property={property}/>)}

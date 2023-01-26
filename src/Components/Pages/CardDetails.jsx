@@ -53,7 +53,7 @@ function CardDetails(){
             icon: 'success',
             title: 'Your work has been saved',
             showConfirmButton: false,
-            timer: 1500
+            footer: '<a href="/properties"> Go back</a>'
           }) : Swal.fire({
             icon: 'error',
             title: 'Oops...',
