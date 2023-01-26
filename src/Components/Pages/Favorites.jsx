@@ -13,6 +13,10 @@ function Favorites() {
     image: ""
     })
 
+    function handleChange(e){
+        setFormData({...formData, [e.target.name]: e.target.value})
+    }
+
     function handleSubmit(e) {
         e.preventDefault()
 
@@ -26,14 +30,14 @@ function Favorites() {
                 body: JSON.stringify({
                     title: e.target.title.value,
                     bedrooms: parseInt(e.target.bedrooms.value),
-                    sqrfeet: parseInt(e.target.sgrfeet.value),
+                    sqrfeet: parseInt(e.target.sqrfeet.value),
                     city: e.target.city.value,
                     price: parseInt(e.target.price.value),
                     description: e.target.description.value,
                     image: e.target.image.value
                 })
         })
-        .then(r=>r.json)
+        .then(r=>r.json())
         .then(((data)=> setFormData(data)))
 
         setFormData({
@@ -51,25 +55,25 @@ function Favorites() {
         <div className="form-div">
             <form onSubmit={handleSubmit}>
             <label htmlFor="fname">Title</label>
-            <input type="text"  name="title" placeholder="New Title"/> 
+            <input type="text"  name="title" onChange={handleChange} placeholder="New Title" value={formData.title}/> 
 
             <label htmlFor="fname">Bedrooms</label>
-            <input type="number"  name="bedrooms" placeholder="No. of Bedrooms"/> 
+            <input type="number"  name="bedrooms" placeholder="No. of Bedrooms" value={formData.number} onChange={handleChange}/> 
 
             <label htmlFor="fname">Square Feet</label>
-            <input type="number"  name="sqrfeet" placeholder="Square ft."/> 
+            <input type="number"  name="sqrfeet" placeholder="Square ft." value={formData.sqrfeet} onChange={handleChange}/> 
 
             <label htmlFor="fname">City</label>
-            <input type="text"  name="city" placeholder="City"/> 
+            <input type="text"  name="city" placeholder="City" value={formData.city} onChange={handleChange}/> 
 
             <label htmlFor="fname">Price</label>
-            <input type="number" name="price" placeholder="Price"/>    
+            <input type="number" name="price" placeholder="Price" value={formData.price} onChange={handleChange}/>    
 
             <label htmlFor="fname">Description</label>
-            <input type="text"  name="description" placeholder="Description"/> 
+            <input type="text"  name="description" placeholder="Description" value={formData.description} onChange={handleChange}/> 
 
             <label htmlFor="fname">Image URL</label>
-            <input type="text"  name="image" placeholder="Image URL"/> 
+            <input type="text"  name="image" placeholder="Image URL" value={formData.image} onChange={handleChange}/> 
 
             <input type="submit"  value="Add New Property"/>
             </form>

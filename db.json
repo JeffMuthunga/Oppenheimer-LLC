@@ -129,6 +129,26 @@
       "description": " Located just 20 minutes' drive from both Nairobi National Park and the airport, the new Radisson Blu Hotel in the heart of the fast-growing business district of Upper Hill is the perfect base for a Kenyan safari or business trip. Discover Nairobi National Park—a well-known wildlife preserve with herds of zebras, wildebeests and giraffes—right on your doorstep.",
       "image": "https://media.radissonhotels.net/image/radisson-blu-hotel-nairobi-upper-hill/exteriorview/16256-114178-f62751420_3xl.jpg?impolicy=CustomCrop&cwidth=670&cheight=603",
       "id": 14
+    },
+    {
+      "title": "Albizzia Mansion",
+      "bedrooms": 3,
+      "sqrfeet": 5000,
+      "city": "Nairobi",
+      "price": 3400000,
+      "description": "A very good location and good security",
+      "image": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 15
+    },
+    {
+      "title": "Day Bridge Hse.",
+      "bedrooms": 7,
+      "sqrfeet": 1100,
+      "city": "Nakuru",
+      "price": 892000,
+      "description": "A grand, luxurious mansion nestled in the hills with breathtaking views of the countryside.",
+      "image": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "id": 16
     }
   ]
 }
