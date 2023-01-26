@@ -15,18 +15,24 @@ function CardDetails(){
 
     function handleSubmit(e){
         e.preventDefault()
-        console.log(e.target.bid.value)
-
+        let bid = parseInt(e.target.bid.value)
+        
         fetch(`http://localhost:8001/hotels/${id}`, {
             method: "PATCH",
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({price : e.target.bid.value})
+            body: JSON.stringify({price : bid})
         })
         .then(r=>r.json())
         .then((data) => setCard(data))
+    }
+    function handleClick(id){
+        fetch(`http://localhost:8001/hotels/${id}`, {
+            method: "DELETE"})
+            .then(r=>r.json())
+            .then((data)=> setCard(data))
     }
     return (
         <div className="row">
@@ -49,9 +55,9 @@ function CardDetails(){
             <form onSubmit={handleSubmit}>
                 <label htmlFor="fname">Change Bid</label>
                 <input type="number" id="fname" name="bid" placeholder="Change Bid"/>          
-                <input type="submit"  value="Submit"/>
+                <input type="submit"  value="Change Bid"/>
             </form>
-            <button className="button">Button</button>
+            <button className="button" onClick={()=>handleClick(id)} >Delete</button>
             </div>
         </div>
     )
