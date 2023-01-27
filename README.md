@@ -1,7 +1,7 @@
 # Oppenheimer LLC.
 ### Jeff Muthunga
 
-This folder contains 4 major files with source code aimed at displaying bots and allowing users to place them in an army section. The application can allow
+This folder contains 4 major files with source code aimed at displaying various properties. The application can allow
 **A html, js, css and db.json files**
 ## 1. Project Description
 The Oppenheimer LLC. is a real estate and marketing company that prides itself in allowing customers to view and have access to its affiliated properties.
