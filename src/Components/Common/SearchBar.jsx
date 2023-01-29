@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons"
 
 function SearchBar({searchData, handleInput}){
+
+// SearchBar component that is used to search through the data
+
     function handleSubmit(e){
         e.preventDefault()
         let search = e.target.search.value.toLowerCase()

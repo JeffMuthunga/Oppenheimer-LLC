@@ -2,11 +2,12 @@ import React from "react";
 import Card from "./Card";
 import { useEffect, useState } from 'react';
 
+// property component that is used to render an array of cards
 function PropertyCollection({handleClick}){
     const [propertyData, setPropertyData] = useState([])
   
     useEffect(()=>{
-      fetch(`http://localhost:8001/hotels/?_limit=7`)
+      fetch(`http://localhost:8001/properties/?_limit=7`)
       .then(r=>r.json())
       .then(data => setPropertyData(data))
     }, []) 

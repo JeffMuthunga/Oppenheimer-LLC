@@ -1,34 +1,34 @@
 {
-  "hotels": [
+  "properties": [
+    {
+      "id": 1,
+      "title": "Beautiful 3 Bedroom House in Downtown",
+      "bedrooms": 3,
+      "sqrfeet": 2000,
+      "city": "Nairobi",
+      "price": 120000,
+      "description": "This beautiful house located in the heart of downtown Los Angeles features 3 bedrooms, 2 bathrooms, and a spacious living area. The gourmet kitchen is perfect for entertaining guests, and the backyard patio is the perfect spot to relax and unwind. Don't miss out on the opportunity to own this stunning property!",
+      "image": "https://images.pexels.com/photos/2980955/pexels-photo-2980955.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=699.825&fit=crop&h=1133.05"
+    },
     {
       "id": 2,
+      "title": "Cozy 2 Bedroom Cottage in the Countryside",
+      "bedrooms": 2,
+      "square_footage": 1200,
+      "city": "Nairobi",
+      "price": 50000000,
+      "description": "Escape to the countryside in this charming 2 bedroom cottage. The cozy living room features a fireplace, and the updated kitchen has all the amenities you need. Enjoy the peaceful surroundings on the front porch or take a walk on the nearby hiking trails. This is the perfect spot to call home.",
+      "image": "https://images.pexels.com/photos/463996/pexels-photo-463996.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    },
+    {
+      "id": 3,
       "title": "Ibis Styles",
       "bedrooms": 17,
       "sqrfeet": 7000,
       "city": "Nairobi",
-      "price": 7500000,
+      "price": 50000000,
       "description": "Offering a terrace and views of the city, ibis Styles - Nairobi Westlands is situated in the Westlands district in Nairobi. Guests can enjoy the on-site restaurant.",
       "image": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/186576516.jpg?k=b31efb6b486fbd01e812ba18d33f62b4f7fa68bce04ada60143aa6460c257718&o=&hp=1"
-    },
-    {
-      "id": 3,
-      "title": "Villa Rosa Kempinski Nairobi",
-      "bedrooms": 21,
-      "sqrfeet": 1900,
-      "city": "Nairobi",
-      "price": 19000,
-      "description": "Stop at Villa Rosa Kempinski to discover the wonders of Nairobi. The hotel offers guests a range of services and amenities designed to provide comfort and convenience. Free Wi-Fi in all rooms, 24-hour security, daily housekeeping, fax machine, gift/souvenir shop are just some of the facilities on offer. Television LCD/plasma screen, carpeting, complimentary instant coffee, complimentary tea, free welcome drink can be found in selected guestrooms.",
-      "image": "https://images.cvent.com/CSN/0ad83279-499c-4f16-b6ea-d255bbe6ce9c/images/4a32182e62ff4b029fea65ad4925af5f_LARGE!_!ddb56887dcf6628ce3c3800cc02b5763.jpg"
-    },
-    {
-      "id": 4,
-      "title": "Kiboko Luxury Camp",
-      "bedrooms": 12,
-      "sqrfeet": 5000,
-      "city": "Nakuru",
-      "price": 25000,
-      "description": "When you stay at Kiboko Luxury Camp in Naivasha, you'll be in a regional park and 6 minutes by foot from Lake Naivasha. This 4-star tentalow is 5.2 mi (8.3 km) from Naivasha District Hospital and 8.4 mi (13.6 km) from Hell's Gate National Park - Elsa Gate.",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/39/ec/f5/getlstd-property-photo.jpg?w=700&h=-1&s=1"
     },
     {
       "id": 5,
@@ -36,7 +36,7 @@
       "bedrooms": 18,
       "sqrfeet": 6000,
       "city": "Mombasa",
-      "price": 19275,
+      "price": 1927500,
       "description": "We're a thoroughly new kind of hotel; so much so that we actually call ourselves a house, as we aim to be a Melting Pot for getting people together and because our way of doing things is perhaps just a little more personable and informal than some. And a touch off-beat: unusual cuisines; unexpected events; untypical meetings; unorthodox interiors",
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/d9/bf/a5/biggest-bedroom-48-square.jpg?w=1200&h=-1&s=1"
     },
@@ -46,7 +46,7 @@
       "bedrooms": 17,
       "sqrfeet": 1000,
       "city": "Mombasa",
-      "price": 13000,
+      "price": 130000,
       "description": "Located on the world famous Diani Beach. The resort comprises three luxurious properties The Baobab, The Maridadi and Kole Kole, offering a unique selection of exquisite accommodation and facilities spread across the resort grounds. Guestrooms have been specifically designed to provide paramount comfort and luxury for all our clients. ",
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/8e/34/3f/kole-kole.jpg?w=1200&h=-1&s=1"
     },
@@ -56,7 +56,7 @@
       "bedrooms": 23,
       "sqrfeet": 1400,
       "city": "Malindi",
-      "price": 50000,
+      "price": 500000,
       "description": "This dramatic hotel with its fantastic pools and beautiful beach is the perfect spot to relax after a safari… or simply visit to relax! The warm and very African feel of the hotel with comfortable rooms, well appointed bathrooms and selection of restaurants offers guests plenty of places to lounge in the sun and almost as many shady spots to enjoy a bit of a breeze and a good book.",
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/b8/4a/4a/southern-palms-beach.jpg?w=1200&h=-1&s=1"
     },
@@ -66,7 +66,7 @@
       "bedrooms": 21,
       "sqrfeet": 1100,
       "city": "Naivasha",
-      "price": 15670,
+      "price": 156700,
       "description": "Severin Sea Lodge is an oasis of calm and recreation in an extensive palm garden. The hotel is located directly on the shores of the Indian Ocean on Bamburi Beach, approximately 12 kilometres from Mombasa Town and 20 kilometres from the airport.",
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/09/ad/27/severin-sea-lodge.jpg?w=1100&h=-1&s=1"
     },
@@ -76,7 +76,7 @@
       "bedrooms": 21,
       "sqrfeet": 1100,
       "city": "Naivasha",
-      "price": 15670,
+      "price": 156070,
       "description": "Severin Sea Lodge is an oasis of calm and recreation in an extensive palm garden. The hotel is located directly on the shores of the Indian Ocean on Bamburi Beach, approximately 12 kilometres from Mombasa Town and 20 kilometres from the airport.",
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/09/ad/27/severin-sea-lodge.jpg?w=1100&h=-1&s=1"
     },
@@ -86,19 +86,9 @@
       "bedrooms": 15,
       "sqrfeet": 1300,
       "city": "Nakuru",
-      "price": 15183,
+      "price": 1518003,
       "description": "For weary travelers who have seen many a hotel room, Palacina is a breath of fresh air. Offering all the luxuries of a five star hotel, with special personalized service, a relaxed atmosphere and great attention to detail.",
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/ef/9b/83/palacina-residence-suites.jpg?w=1200&h=-1&s=1"
-    },
-    {
-      "id": 11,
-      "title": "Sarova Panafric",
-      "bedrooms": 30,
-      "sqrfeet": 1200,
-      "city": "Mombasa",
-      "price": 16789,
-      "description": "Sarova Panafric offers 162 rooms in a range of Superior, Executive, Club, Studio and Themed Suites - all recently refurbished and decorated in a contemporary vibrant African style. Once the watering hole for freedom fighters, spies and foreign correspondents, Flame Tree restaurant is named after the Flame Tree that holds pride of place in the gardens and offers leisurely meals.",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/1a/13/f2/sarova-panafric.jpg?w=1200&h=-1&s=1"
     },
     {
       "id": 12,
@@ -106,7 +96,7 @@
       "bedrooms": 40,
       "sqrfeet": 1900,
       "city": "Nairobi",
-      "price": 20035,
+      "price": 2003005,
       "description": "Trademark Hotel, a spirited clubhouse for the citys growing cultural and diplomatic community designed to reflect the exploding creativity and innovation of the Kenyan capital is now open. The 215-room hotel comes from the makers of Tribe, a pioneering lifestyle property that set a new benchmark for design-driven, high-end hospitality in the city when it opened nearly a decade ago.",
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/37/52/56/suite.jpg?w=1200&h=-1&s=1"
     },
@@ -115,7 +105,7 @@
       "city": "Nairobi",
       "bedrooms": "43",
       "sqrfeet": 2500,
-      "price": 20000,
+      "price": 2000000,
       "description": " Located just 20 minutes' drive from both Nairobi National Park and the airport, the new Radisson Blu Hotel in the heart of the fast-growing business district of Upper Hill is the perfect base for a Kenyan safari or business trip. Discover Nairobi National Park—a well-known wildlife preserve with herds of zebras, wildebeests and giraffes—right on your doorstep.",
       "image": "https://media.radissonhotels.net/image/radisson-blu-hotel-nairobi-upper-hill/exteriorview/16256-114178-f62751420_3xl.jpg?impolicy=CustomCrop&cwidth=670&cheight=603",
       "id": 14
@@ -139,6 +129,16 @@
       "description": "A grand, luxurious mansion nestled in the hills with breathtaking views of the countryside.",
       "image": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "id": 16
+    },
+    {
+      "id": 17,
+      "title": "Villa Rosa Kempinski Nairobi",
+      "bedrooms": 21,
+      "sqrfeet": 1900,
+      "city": "Nairobi",
+      "price": 1900000,
+      "description": "Stop at Villa Rosa Kempinski to discover the wonders of Nairobi. The hotel offers guests a range of services and amenities designed to provide comfort and convenience. Free Wi-Fi in all rooms, 24-hour security, daily housekeeping, fax machine, gift/souvenir shop are just some of the facilities on offer. Television LCD/plasma screen, carpeting, complimentary instant coffee, complimentary tea, free welcome drink can be found in selected guestrooms.",
+      "image": "https://images.cvent.com/CSN/0ad83279-499c-4f16-b6ea-d255bbe6ce9c/images/4a32182e62ff4b029fea65ad4925af5f_LARGE!_!ddb56887dcf6628ce3c3800cc02b5763.jpg"
     }
   ]
 }

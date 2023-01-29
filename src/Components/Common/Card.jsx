@@ -1,3 +1,4 @@
+//Card component
 import React from "react";
 
 function Card({property, handleClick}) {
@@ -8,7 +9,7 @@ function Card({property, handleClick}) {
             <img src={property.image} alt={property.title}/>
             <h3>{property.title}</h3>
             <h2>Kshs  {property.price}</h2>
-            <a href={`/properties/${property.id}`}>View Property</a>
+            <a href={`/properties/${property.id}`}><button class="button-33" role="button">View</button></a>
         </div>
     )
 }

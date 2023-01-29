@@ -9,16 +9,16 @@ function CardDetails(){
     const [card, setCard] = useState([])
 
     useEffect(()=>{
-        fetch(`http://localhost:8001/hotels/${id}`)
+        fetch(`http://localhost:8001/properties/${id}`)
         .then(r=>r.json())
         .then((data) => setCard(data))
     },[])
-
+    //PATCH method
     function handleSubmit(e){
         e.preventDefault()
         let bid = parseInt(e.target.bid.value)
         
-        fetch(`http://localhost:8001/hotels/${id}`, {
+        fetch(`http://localhost:8001/properties/${id}`, {
             method: "PATCH",
             headers: {
                 "Accept": "application/json",
@@ -42,8 +42,9 @@ function CardDetails(){
             footer: '<a href="">Why do I have this issue?</a>'
           })
     }
+    //DELETE Method
     function handleClick(id){
-        fetch(`http://localhost:8001/hotels/${id}`, {
+        fetch(`http://localhost:8001/properties/${id}`, {
             method: "DELETE"})
             .then(r=>r.json())
             .then((data)=> setCard(data))
@@ -51,7 +52,7 @@ function CardDetails(){
         true ? Swal.fire({
             position: 'top-end',
             icon: 'success',
-            title: 'Your work has been saved',
+            title: 'Your data has been deleted',
             showConfirmButton: false,
             footer: '<a href="/properties"> Go back</a>'
           }) : Swal.fire({
@@ -62,6 +63,7 @@ function CardDetails(){
           })
     }
     return (
+        //displaying the Card details
         <div className="row">
             <div className="column">
                 <div className="card-details-container">

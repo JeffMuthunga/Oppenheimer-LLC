@@ -1,5 +1,7 @@
 import React from "react";
 
+
+//Footer component
 function Footer(){
 
     return(
@@ -15,9 +17,9 @@ function Footer(){
             </ul>
             </nav>
             <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
             </div>
             <p>Contact us: <a href="mailto:jeff.wainaina@student.moringaschool.com">jeff.wainaina@student.moringaschool.com</a></p>
         </div>

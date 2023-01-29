@@ -7,6 +7,7 @@ import SearchBar from "../Common/SearchBar";
 
 
 function Home ({searchData, handleInput, handleClick}) {
+    //TypeWriter Effect
     const [text] = useTypewriter({
         words: ['Nairobi', 'Nakuru', 'Mombasa'],
         loop: {},

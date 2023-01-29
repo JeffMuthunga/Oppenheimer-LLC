@@ -1,8 +1,11 @@
 import React, {useState} from "react";
+import Swal from "sweetalert2";
 
-
+//Admin page
 function Admin() {
-
+ 
+    //initializing use State with an empty array
+    
     const [formData, setFormData] = useState({
     title: "",
     bedrooms: 0,
@@ -19,8 +22,8 @@ function Admin() {
 
     function handleSubmit(e) {
         e.preventDefault()
-
-        fetch("http://localhost:8001/hotels", {
+        //POST method
+        fetch("http://localhost:8001/properties", {
             method: "POST",
             headers:
                 {
@@ -40,6 +43,19 @@ function Admin() {
         .then(r=>r.json())
         .then(((data)=> setFormData(data)))
 
+        true ? Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your data has been added',
+            showConfirmButton: false,
+            footer: '<a href="/home"> Go back</a>'
+          }) : Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+            footer: '<a href="">Why do I have this issue?</a>'
+          })
+
         setFormData({
             formtitle: "",
             bedrooms: 0,
@@ -52,6 +68,7 @@ function Admin() {
     }
 
     return (    
+        <div className="admin-form">
         <div className="form-div">
             <form onSubmit={handleSubmit}>
             <label htmlFor="fname">Title</label>
@@ -77,6 +94,7 @@ function Admin() {
 
             <input type="submit"  value="Add New Property"/>
             </form>
+        </div>
         </div>
     )
 }
